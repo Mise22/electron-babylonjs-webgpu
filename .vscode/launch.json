@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Electron",
+        "type": "node",
+        "request": "launch",
+        "cwd": "${workspaceFolder}",
+        "program": "${workspaceRoot}/app/main.ts",
+        "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
+        "windows": {
+          "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron.cmd"
+        },
+        "args" : ["."],
+        "outputCapture": "std"
+      }
+    ]
+  }
